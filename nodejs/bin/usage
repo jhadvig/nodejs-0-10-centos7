@@ -1,5 +1,0 @@
-#!/bin/sh
-
-cat <<EOF
-This is a nodejs-0.10 centos image
-EOF
