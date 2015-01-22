@@ -26,6 +26,8 @@ RUN mkdir -p /opt/nodejs/{run,src} && \
     chown -R nodejs:nodejs /opt/nodejs
 
 
+ADD ./enablenodejs010.sh /etc/profile.d/
+
 
 ENV APP_ROOT .
 ENV HOME     /opt/nodejs
