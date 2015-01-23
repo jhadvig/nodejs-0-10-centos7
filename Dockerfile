@@ -23,10 +23,8 @@ ENV STI_LOCATION /tmp
 RUN mkdir -p /opt/nodejs/{run,src} && \
     groupadd -r nodejs -f -g 433 && \
     useradd -u 431 -r -g nodejs -d /opt/nodejs -s /sbin/nologin -c "NodeJS user" nodejs && \
-    chown -R nodejs:nodejs /opt/nodejs
-
-
-ADD ./enablenodejs010.sh /etc/profile.d/
+    chown -R nodejs:nodejs /opt/nodejs && \
+    mv -f /opt/nodejs/bin/nodejs /usr/bin/nodejs
 
 
 ENV APP_ROOT .
