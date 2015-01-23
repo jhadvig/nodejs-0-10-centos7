@@ -6,4 +6,4 @@
 # #!/usr/bin/ruby
 #
 [ -f ${HOME}/.bashrc ] && source ${HOME}/.bashrc
-exec ruby $@
+exec nodejs $@
